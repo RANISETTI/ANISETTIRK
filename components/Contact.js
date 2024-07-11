@@ -17,7 +17,7 @@ export default function Contact() {
                   </a>
                 </Link>
               </Breadcrumb.Item>
-              <Breadcrumb.Item active className="text-white">Contact Us</Breadcrumb.Item>
+              <Breadcrumb.Item active className="text-white">Contact Us 1</Breadcrumb.Item>
             </Breadcrumb>
           </Container>
         </div>
