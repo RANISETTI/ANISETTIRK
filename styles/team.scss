@@ -1,0 +1,118 @@
+.apts-team-background{
+  background: linear-gradient(90deg, rgba(240, 238, 254, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  padding: 2rem 0;
+}
+
+.apts-team-title{
+  color: $headding-color;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.25rem;
+}
+
+.apts-team-card{
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: #fff;
+  box-shadow: 0 3px 20px -2px rgb(229 224 254);
+  text-align: center;
+  border:none;
+  padding: 12px;
+  min-height:550px;
+}
+
+.member-img::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(/images/team-shape-bg.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+
+h2.apts-team-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $headding-color;
+  text-transform: uppercase;
+}
+h2.apts-team-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+ h2.apts-team-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+
+
+h2.apts-service-tittle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $headding-color;
+  text-transform: uppercase;
+}
+h2.apts-service-tittle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+ h2.apts-service-tittle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.apts-team-card img {
+  border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.apts-team-card .card-body {
+padding: 20px 0 0 0;
+}
+.apts-team-card .card-text {
+  font-size: 13px;
+  }
+
+  .apts-team-card .card-title {
+    color: $headding-color;
+      transition: 0.3s;
+      text-decoration: none;
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 13px;
+  }

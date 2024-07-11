@@ -1,0 +1,738 @@
+@import "/styles//variables.scss";
+
+/* Carousel */
+.apts-homepage-carousel {
+  max-height: 80vh;
+  // min-height: 350px;
+  background-position: center center;
+  width: 100%;
+  display: block;
+}
+
+.cust-inline {
+  display: inline;
+}
+
+.cust-height-71 {
+  height: 71px;
+
+}
+
+.apts-homepage-carousel-heading {
+  bottom: 10rem;
+  padding: 1.25rem 0;
+  position: absolute;
+  color: #000;
+}
+
+.carousel-caption h1,
+h4 {
+  color: #00052F;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.apts-homepage-carousel-heading h1,
+h4 {
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #fff 0px 0px 20px, #fff 0px 0px 30px, #fff 0px 0px 40px, #fff 0px 0px 50px, #fff 0px 0px 75px;
+}
+
+
+/* About Us */
+.apts-about-us {
+  background-image: url(/images/about-us_section_BG.jpg);
+  background-size: cover;
+  padding: 1rem;
+}
+
+.apts-about-us-heading {
+  margin: 1.5rem 0;
+
+}
+
+@media (min-width: 425px) {
+  .apts-about-us-heading {
+    margin: 1.5rem 0;
+    padding-right: 30px;
+  }
+}
+
+.apts-about-us-heading h2 {
+  color: $btnBG-primary-color;
+  font-weight: bold;
+  padding-bottom: 45px;
+}
+
+.apts-about-us-heading p {
+  line-height: 25px;
+  font-size: 16px;
+  color: #272626;
+}
+
+.apts-about-us-heading h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $btnBG-primary-color-hover;
+  text-transform: uppercase;
+}
+
+.apts-about-us-heading h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.apts-about-us-heading h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.cust-head h2::before {
+  left: 0;
+}
+
+.cust-head h2::after {
+  left: 0;
+}
+
+.apts-about-us-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: $white;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 1px solid $btnBG-primary-color;
+  background: $btnBG-primary-color;
+  margin-bottom: 25px;
+}
+
+.apts-about-us-button:hover {
+  border: 1px solid $btnBG-primary-color-hover;
+  background-color: $btnBG-primary-color-hover;
+  color: $white;
+}
+
+.img-border-radius {
+  border-radius: 20px;
+  width: 90%;
+
+}
+
+.about-us-img .img {
+  position: relative;
+}
+
+.about-us-img .img img {
+  position: relative;
+  z-index: 3;
+  border-radius: 15px;
+}
+
+.about-us-img .img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: $about-banner-before;
+  border-radius: 20px;
+  transform: rotate(355deg);
+
+}
+
+.about-us-img .img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: $about-banner-before;
+  border-radius: 20px;
+  transform: rotate(345deg);
+}
+
+/* News */
+.apts-news-heading h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+@media (max-width: 425px) {
+  .cust-head-h2 {
+    margin-top: 30px;
+
+  }
+
+  .cust-head-h2-1 {
+    margin-bottom: 15px !important;
+
+  }
+}
+
+.apts-news-heading h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.apts-news-heading h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.cust-head1 h2::before {
+  left: 0;
+}
+
+.cust-head1 h2::after {
+  left: 0;
+}
+
+.apts-news-background-image {
+  background-image: url(/images/news-events-bg.jpg);
+  background-size: cover;
+}
+
+.apts-tenders-background-image {
+  background-image: url(/images/tenders-bg.jpg);
+  background-size: cover;
+}
+
+.apts-news-background {
+  padding: 2rem 1rem;
+  background: $apts-news-background;
+}
+
+.apts-download-background-image {
+  background-image: url(/images/download-bg.jpg);
+  background-size: cover;
+}
+
+.apts-download-background {
+  padding: 2rem 1rem;
+  background: rgba(73, 63, 153, 0.95);
+}
+
+.apts-news-title {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  color: #fff;
+
+}
+
+.apts-news-tenders-icon {
+  height: 1.5em;
+  color: $homePageIcon;
+  padding: 0 5px 0 0;
+  margin: 0 0 -5px 0;
+}
+
+/* Services */
+/* .apts-services-title h2{
+  color: #766ACF;
+  font-weight: bold;
+}
+*/
+.apts-services-card {
+  box-shadow: 0 3px 20px -2px $card-shadow;
+  transition: all 0.3s ease-in-out;
+  border-top-left-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  border: 0px solid #F1F1F1;
+  height: 100%;
+}
+
+.apts-services-card .card-header {
+  background: transparent;
+  border-top-left-radius: 30px !important;
+}
+
+.apts-services-card .card-footer {
+  background: transparent;
+  border-bottom-right-radius: 30px !important;
+  padding-bottom: 20px;
+  border-top: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+@media (min-width: 1400px) {
+  .apts-services-card {
+    height: 525px;
+  }
+}
+
+.apts-services-card-image {
+  border-radius: 30px 0 0 0;
+}
+
+.apts-services-card-title {
+  color: $btnBG-primary-color-hover;
+  font-size: 1.25rem;
+}
+
+.apts-services-card-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: $btnBG-primary-color-hover;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 1px solid $btnBG-primary-color-hover;
+  background: #fff;
+}
+
+.apts-services-card-button:hover {
+  background: $btnBG-primary-color;
+  color: #fff;
+  text-decoration: none;
+}
+
+.tenders-scroll {
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 25px;
+}
+
+.tenders-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.tenders-scroll::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+.tenders-scroll::-webkit-scrollbar-thumb {
+  background-color: #766ACF;
+}
+
+.apts-services-bg {
+
+  background-image: url(/images/about_us-bg.png);
+
+}
+
+.apts-services-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $btnBG-primary-color-hover;
+  text-transform: uppercase;
+}
+
+.apts-services-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.apts-services-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* Infrastructure Projects*/
+
+.apts-infrastructure-background {
+  background: linear-gradient(90deg, $innerpageHead, $white);
+  padding: 3rem 0;
+}
+
+/*.apts-infrastructure-title h2{
+  color: #766ACF;
+  font-weight: bold;
+}*/
+
+.apts-infrastructure-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $btnBG-primary-color-hover;
+  text-transform: uppercase;
+}
+
+.apts-infrastructure-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.apts-infrastructure-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.apts-infrastructure-card {
+  box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+  transition: all 0.3s ease-in-out;
+  padding: 30px 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #fff;
+  display: inline-table;
+  border: none;
+}
+
+.apts-downloads-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.apts-downloads-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.apts-downloads-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.apts-infrastructure-card-icon {
+  color: $contact-iocn-color;
+  height: 3em;
+  width: 3em;
+}
+
+.apts-infrastructure-card-title {
+  color: $btnBG-primary-color-hover;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+.apts-infrastructure-card-text {
+  margin-left: 60px;
+}
+
+.apts-infrastructure-card-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: $btnBG-primary-color-hover;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 1px solid $btnBG-primary-color-hover;
+  background: #fff;
+  float: right;
+}
+
+.apts-infrastructure-card-button:hover {
+  background: $btnBG-primary-color;
+  color: #fff;
+  text-decoration: none;
+}
+
+.apts-infrastructure-card-button {
+  float: right;
+  border: 1px solid $btnBG-primary-color-hover;
+}
+
+/* Contact us */
+.apts-contact-us {
+  background-image: url(/images/news-bg.png);
+  background-size: cover;
+}
+
+.apts-contact-us h2 {
+  color: $btnBG-primary-color-hover;
+  font-weight: bold;
+}
+
+/*.apts-contact-us-button{
+  border: 1px solid #766ACF;
+  margin: 1rem 0;
+} */
+.apts-contact-us-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: $btnBG-primary-color-hover;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 1px solid $btnBG-primary-color-hover;
+  background: #fff;
+  margin-top: 25px;
+}
+
+.apts-contact-us-button:hover {
+  background: $btnBG-primary-color;
+  color: #fff;
+  text-decoration: none;
+}
+
+.apts-contact-us-card {
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 30px 8px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  border: none;
+}
+
+.apts-contact-us-card-icon {
+  color: $contact-iocn-color;
+  height: 2.5em;
+}
+
+.apts-contact-us-card-title {
+  color: $btnBG-primary-color-hover;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h5.purpul {
+  font-size: 17px;
+  font-weight: 600;
+  color: $dark-purple;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+h5.purpul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: $btnBG-primary-color;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-bg {
+  background: linear-gradient(90deg, $innerpageHead, $white);
+  padding: 50px 0;
+}
+
+.footer-bg p,
+strong {
+  margin-bottom: 10px;
+  color: $dark-purple ;
+}
+
+ul.cust-effect a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0px;
+  /* left: 0; */
+  background-color: #766ACF;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+h2.apts-services-title {
+  //font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $btnBG-primary-color-hover;
+  text-transform: uppercase;
+}
+
+h2.apts-services-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: $headding-before;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+h2.apts-services-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $headding-after;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.innerpages-img-borders {
+  border-radius: 30px 0 30px 0;
+  border: 1px solid #D4E0ED;
+  box-shadow: 8px 8px #e5eaf0;
+  //float: right;
+  margin-top: 1em;
+  margin-right: 1em;
+  padding: 35px;
+}
+
+.innerpages-img-borders1 {
+  border: 1px solid #D4E0ED;
+  padding: 8px;
+  box-shadow: 8px 8px #e5eaf0;
+  border-top-left-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+}
+
+.innerpage-centent-list ol li {
+  line-height: 30px;
+}
+
+.list-items {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  line-height: 35px;
+}
+
+.order-list-items {
+  margin: 0 0 0 30px;
+  padding: 0px;
+  line-height: 35px;
+}
+
+.cust-downloads a {
+  color: #0d6efd;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dropdown-toggle:after {
+
+  padding: 0px;
+  transform: rotate(360deg);
+}
+
+.dropdown-item {
+
+  padding: 0.4rem 1rem;
+
+}
+
+.navbar {
+
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $btnBG-primary-color-hover;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $btnBG-primary-color;
+}
+
+.cm-itMinister {
+  position: absolute;
+  z-index: 99;
+  left: 64%;
+  top: 17%;
+}

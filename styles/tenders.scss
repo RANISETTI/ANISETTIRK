@@ -1,0 +1,113 @@
+.tender-loading{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 2px 0;
+}
+.no-height-loading{
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 2px 0;
+}
+.button-loading{
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 0 0;
+}
+.tender-apply-button{
+  margin-left: 15px;
+  background-color: #f16e26;
+  border-color: #f16e26;
+}
+.tender-card{
+  margin: 15px 0;
+  box-shadow: 0 3px 20px -2px rgb(229 224 254);
+}
+.tender-card-heading{
+  // background: #c8c8c8a6;
+  font-size: 15px;
+  color: #fff;
+}
+.tender-card-title{
+  color: #766acf;
+  font-size: 14px;
+}
+.tender-download-button{
+  background-color: #20bf93 !important;
+  border-color: #20bf93 !important;
+  line-height: 15px !important;
+}
+.tender-download-button:hover {
+  background-color: #20bf93 !important;
+  border-color: #20bf93 !important;
+}
+.tender-scroll-text-container{
+  position: relative;
+  padding:0px;
+  overflow: hidden;
+  width: -webkit-fill-available;
+}
+.tender-scroll-text{
+  color: #f8498c;
+  font-size: 15px;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
+}
+
+.tender-scroll-text:hover {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.card {
+    
+  border: 0px solid rgb(255 255 255);
+  
+}
+.cust-card .card-header {
+  
+  background-color: transparent;
+  border-bottom: 0px solid #3D2E87;
+}
+.card-header {
+  
+  background-color: $btnBG-primary-color;
+  border-bottom: 0px solid #3D2E87;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 0rem 1rem;
+}

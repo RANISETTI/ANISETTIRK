@@ -1,0 +1,18 @@
+deploy_staging:
+  stage: deploy
+  only:
+    - main
+  script:
+    - echo "Deploy to Staging Server"
+    - cd /data/sites/apts/apts-ui
+    - git checkout -- package-lock.json
+    - git pull
+    - npm install
+    - npm run build
+    - export PORT=7001
+    - pm2 reload apts-dev-ui
+    - echo "Done"
+  tags:
+    - apts
+  variables:
+    GIT_STRATEGY: none

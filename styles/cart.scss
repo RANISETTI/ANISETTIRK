@@ -1,0 +1,50 @@
+.cart-image {
+    max-width: 120px;
+    height: auto;
+    width: 100%;
+    max-height: 300px;
+}
+
+.address-container p, .selected-address-container p {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.selected-address-container {
+    border: 1px solid blue!important;
+}
+
+.cart-quantity-incrementor {
+    width: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 0.2s;
+    padding: 0.5rem 1rem;   
+}
+.consignee-cart-quantity-incrementor {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 0.2s;
+    padding: 0.5rem 1rem;   
+}
+
+.cart-quantity-incrementor:hover, .consignee-cart-quantity-incrementor:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+}
+
+.cart-quantity-placeholder {
+    padding: 0.5rem 1rem;
+}
+
+.cart-title {
+    font-size: 19px;
+}
+
+.cart-sub-price {
+    font-size: 16px;
+    
+}
